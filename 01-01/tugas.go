@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+)
 
 func main() {
 	x := 30
@@ -14,8 +18,12 @@ func main() {
 
 	fmt.Println("======")
 
-	var name string
-	fmt.Println("Enter your name: ")
-	fmt.Scan(&name)
-	fmt.Println("your name is", name)
+	// var name string
+	// fmt.Println("Enter your name: ")
+	// fmt.Scan(&name)
+	// fmt.Println("your name is", name)
+
+	scanner := bufio.NewScanner(os.Stdin)
+	scanner.Scan()
+	fmt.Println("my name is: ", scanner.Text())
 }
