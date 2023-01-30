@@ -21,8 +21,9 @@ func GetSum(a, b int) int {
 }
 
 func main() {
-	fmt.Println(GetSum(0, 1))
-	fmt.Println(GetSum(1, 2))
-	fmt.Println(GetSum(5, -1))
-	fmt.Println(GetSum(17, 17))
+	fmt.Println(GetSum(0, 1))   // 0 1
+	fmt.Println(GetSum(1, 2))   // 1 2
+	fmt.Println(GetSum(5, -1))  // 5 4 3 2 1 0 -1
+	fmt.Println(GetSum(17, 17)) // 17 17
+	fmt.Println(GetSum(-7, 13)) // 17 17
 }

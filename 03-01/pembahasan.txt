@@ -1,0 +1,5 @@
+1. inisialisasi git
+git init
+
+2. tracking file
+git status
