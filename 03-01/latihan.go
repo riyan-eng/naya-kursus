@@ -6,15 +6,14 @@ import (
 	"strings"
 )
 
-func OddCount(n int) int {
+func OddCount(n int) (num int) {
 	//your code here
-	var num int
 	if n%2 == 0 {
 		num = n / 2
 	} else {
 		num = (n - 1) / 2
 	}
-	return num
+	return
 }
 
 func TwoToOne(s1 string, s2 string) string {
@@ -24,6 +23,7 @@ func TwoToOne(s1 string, s2 string) string {
 	// fmt.Println(listString)
 	var eek []string
 	for _, val := range listString {
+		fmt.Println(key[val])
 		if _, kk := key[val]; !kk {
 			key[val] = true
 			// fmt.Println(val)
@@ -36,10 +36,10 @@ func TwoToOne(s1 string, s2 string) string {
 }
 
 func main() {
-	// fmt.Println(OddCount(15))
-	// fmt.Println(OddCount(15023))
+	fmt.Println(OddCount(15))
+	fmt.Println(OddCount(15023))
 
-	a := "xyaabbbccccdefww"
-	b := "xxxxyyyyabklmopq"
-	fmt.Println(TwoToOne(a, b))
+	// a := "xyaabbbccccdefww"
+	// b := "xxxxyyyyabklmopq"
+	// fmt.Println(TwoToOne(a, b))
 }
