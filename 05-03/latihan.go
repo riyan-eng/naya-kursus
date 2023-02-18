@@ -32,6 +32,7 @@ func main() {
 	// fmt.Println(Gimme([3]int{2, 3, 1}))
 	// fmt.Println(Gimme([3]int{5, 10, 14}))
 	// fmt.Println(Gimme([3]int{1, 3, 4}))
+	// fmt.Println(Gimme([3]int{5, 3, 4}))
 
 	fmt.Println(RoundToNext5(2))
 	fmt.Println(RoundToNext5(3))
