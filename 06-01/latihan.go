@@ -59,6 +59,12 @@ func (tt TikTok) Share() error {
 
 func (tt TikTok) Message() error {
 	fmt.Println("message", tt.Name)
+	tt.Joget()
+	return nil
+}
+
+func (tt TikTok) Joget() error {
+	fmt.Println("joget", tt.Name)
 	return nil
 }
 
@@ -107,6 +113,10 @@ func main() {
 	tt.Message()
 	tt.Share()
 	tt.Status()
+
+	ti := TikTok{Name: "tiktok"}
+	ti.Message()
+	ti.Joget()
 
 	fmt.Println()
 
