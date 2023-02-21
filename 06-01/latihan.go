@@ -68,6 +68,8 @@ func (tt TikTok) Joget() error {
 	return nil
 }
 
+var _ SosmedInterface = WhatsApp{}
+
 func NewWhatsApp(name string) *WhatsApp {
 	return &WhatsApp{
 		Name: name,
